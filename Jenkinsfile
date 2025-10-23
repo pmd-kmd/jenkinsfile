@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repositories') {
             steps {
-                echo "GitHub hook trigger for GITScm polling"
+                echo "GitHub hook trigger for GITScm polling again"
                 echo "Cloning frontend and backend repositories..."
                 dir('frontend') {
                     git branch: 'main', url: "${FRONTEND_REPO}"
